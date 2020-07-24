@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ميد كيت</string>
+    <string name="search">إبحث</string>
+    <string name="offers">العروض</string>
+    <string name="pharmacy">صيدلية</string>
+    <string name="schedule">مواعيدي</string>
+    <string name="more">المزيد</string>
+    <string name="select_a_country">اختر البلد</string>
+    <string name="done">تم</string>
+    <string name="choose_language">اختر لغة</string>
+    <string name="ksa">المملكة العربية السعودية</string>
+    <string name="eg">مصر</string>
+    <string name="jr">الأردن</string>
+    <string name="lb">لبنان</string>
+    <string name="ng">نيجيريا</string>
+    <string name="ke">كينيا</string>
+</resources>

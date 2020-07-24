@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="locale"
+    tools:context=".ui.activities.LocaleActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layoutDirection="locale"
+        android:text="@string/select_a_country"
+        android:textAlignment="center"
+        android:textColor="@color/blue_smoke"
+        android:textSize="16sp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:layoutDirection="locale"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:listitem="@layout/country_list_item" />
+
+
+    <Button
+        android:id="@+id/done"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_8sdp"
+        android:backgroundTint="@color/colorPrimary"
+        android:text="@string/done"
+        android:textAllCaps="false"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/_16sdp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/language_radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/done">
+
+        <RadioButton
+            android:id="@+id/english"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_4sdp"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginRight="@dimen/_4sdp"
+            android:background="@drawable/rounded_border"
+            android:button="@null"
+            android:gravity="center"
+            android:padding="@dimen/_4sdp"
+            android:text="@string/english"
+            android:textColor="@color/blue_smoke"
+            android:textSize="@dimen/_12sdp" />
+
+        <RadioButton
+            android:id="@+id/arabic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_4sdp"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginRight="@dimen/_4sdp"
+            android:background="@drawable/rounded_border"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:padding="@dimen/_4sdp"
+            android:text="@string/arabic"
+            android:textColor="@color/blue_smoke"
+            android:textSize="@dimen/_12sdp" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/choose_language"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:text="@string/choose_language"
+        android:textAlignment="center"
+        android:textColor="@color/blue_smoke"
+        android:textSize="@dimen/_12sdp"
+        app:layout_constraintBottom_toTopOf="@id/language_radio_group" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

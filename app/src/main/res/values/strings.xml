@@ -1,3 +1,20 @@
 <resources>
     <string name="app_name">Medkit</string>
+    <string name="search">search</string>
+    <string name="offers">offers</string>
+    <string name="pharmacy">pharmacy</string>
+    <string name="schedule">schedule</string>
+    <string name="more">more</string>
+    <string name="country_logo" translatable="false">country logo</string>
+    <string name="select_a_country">Select a Country</string>
+    <string name="done">Done</string>
+    <string name="english" translatable="false">English</string>
+    <string name="arabic" translatable="false">عربي</string>
+    <string name="choose_language">Choose language</string>
+    <string name="ksa">Saudi Arabia</string>
+    <string name="eg">Egypt</string>
+    <string name="jr">Jordan</string>
+    <string name="lb">Lebanon</string>
+    <string name="ng">Nigeria</string>
+    <string name="ke">Kenya</string>
 </resources>

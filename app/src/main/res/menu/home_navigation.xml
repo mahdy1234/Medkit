@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/search"
+        android:icon="@drawable/ic_baseline_search_24"
+        android:title="@string/search" />
+
+    <item
+        android:id="@+id/offers"
+        android:icon="@drawable/ic_price_tag"
+        android:title="@string/offers" />
+
+    <item
+        android:id="@+id/pharmacy"
+        android:icon="@drawable/ic_drugs"
+        android:title="@string/pharmacy" />
+
+    <item
+        android:id="@+id/schedule"
+        android:icon="@drawable/ic_schedule"
+        android:title="@string/schedule" />
+
+    <item
+        android:id="@+id/more"
+        android:icon="@drawable/ic_baseline_more_horiz_24"
+        android:title="@string/more" />
+</menu>

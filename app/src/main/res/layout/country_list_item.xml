@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/_4sdp"
+    android:gravity="center_vertical"
+    android:layout_gravity="center_vertical"
+    android:layout_marginStart="@dimen/_16sdp"
+    android:layout_marginEnd="@dimen/_16sdp"
+    android:layoutDirection="locale">
+
+    <ImageView
+        android:id="@+id/country_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:foregroundGravity="center"
+        android:layout_alignParentStart="true"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:contentDescription="@string/country_logo" />
+
+    <TextView
+        android:textSize="@dimen/_12sdp"
+        android:id="@+id/country_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/country_img"
+        android:textColor="@color/blue_smoke" />
+
+    <RadioButton
+        android:buttonTint="@color/colorPrimaryDark"
+        android:id="@+id/selection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:text="@null" />
+
+</RelativeLayout>
