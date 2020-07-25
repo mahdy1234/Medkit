@@ -8,11 +8,10 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
-import android.widget.RadioButton;
 import android.widget.RadioGroup;
 
 import com.dnteam.medkit.R;
-import com.dnteam.medkit.ui.adapters.CountryAdapter;
+import com.dnteam.medkit.adapters.CountryAdapter;
 import com.dnteam.medkit.util.SharedPreferencesUtil;
 
 

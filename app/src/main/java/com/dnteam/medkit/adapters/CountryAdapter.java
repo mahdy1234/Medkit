@@ -1,4 +1,4 @@
-package com.dnteam.medkit.ui.adapters;
+package com.dnteam.medkit.adapters;
 
 import android.content.Context;
 import android.view.LayoutInflater;
