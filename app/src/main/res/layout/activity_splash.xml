@@ -2,11 +2,13 @@
 <androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/motion_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorPrimary"
-    app:layoutDescription="@xml/activity_splash_scene2"
+    app:layoutDescription="@xml/activity_splash_scene"
     tools:context=".ui.activities.SplashActivity">
+
 
     <TextView
         android:id="@+id/m"
@@ -14,7 +16,54 @@
         android:layout_height="wrap_content"
         android:text="M"
         android:textColor="@color/colorAccent"
-        android:textSize="@dimen/_32sdp"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:textSize="@dimen/_32sdp" />
+
+    <TextView
+        android:id="@+id/e"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="E"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/_32sdp" />
+
+    <TextView
+        android:id="@+id/d"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="D"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/_32sdp" />
+
+    <TextView
+        android:id="@+id/k"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="K"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/_32sdp" />
+
+    <TextView
+        android:id="@+id/i"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/_32sdp" />
+
+    <TextView
+        android:id="@+id/t"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="T"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/_32sdp" />
+
+    <ImageView
+        android:id="@+id/bag"
+        android:layout_width="@dimen/_32sdp"
+        android:layout_height="@dimen/_32sdp"
+        android:src="@drawable/ic_medical_bag_01"
+        android:contentDescription="bag" />
+
 
 </androidx.constraintlayout.motion.widget.MotionLayout>
