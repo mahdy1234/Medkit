@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/search_fragment">
+
+    <fragment
+        android:id="@+id/search_fragment"
+        android:name="com.dnteam.medkit.ui.fragments.SearchFragment"
+        android:label="fragment_blank"
+        tools:layout="@layout/fragment_search" />
+
+
+    <fragment
+        android:id="@+id/offers_fragment"
+        android:name="com.dnteam.medkit.ui.fragments.OffersFragment"
+        android:label="fragment_blank"
+        tools:layout="@layout/fragment_offers" />
+
+
+    <fragment
+        android:id="@+id/pharmacy_fragment"
+        android:name="com.dnteam.medkit.ui.fragments.PharmacyFragment"
+        android:label="fragment_blank"
+        tools:layout="@layout/fragment_pharmacy" />
+
+    <fragment
+        android:id="@+id/schedule_fragment"
+        android:name="com.dnteam.medkit.ui.fragments.ScheduleFragment"
+        android:label="fragment_blank"
+        tools:layout="@layout/fragment_pharmacy" />
+
+    <fragment
+        android:id="@+id/more_fragment"
+        android:name="com.dnteam.medkit.ui.fragments.MoreFragment"
+        android:label="fragment_blank"
+        tools:layout="@layout/fragment_pharmacy" />
+
+</navigation>
