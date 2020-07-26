@@ -17,10 +17,13 @@
     <string name="lb">Lebanon</string>
     <string name="ng">Nigeria</string>
     <string name="ke">Kenya</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="book_directly">Book an appointment directly</string>
-    <string name="book_via_call">Book an appointment via phone call</string>
-    <string name="book_service">Book a service or surgery</string>
+    <string name="book_directly">Book a Doctor Appointment</string>
+    <string name="book_via_call">Book a Telehealth Call</string>
+    <string name="book_service">Book a Service or Operation</string>
     <string name="order_medicines">Order Medicines</string>
-    <string name="book_domestic_visit">Book a domestic visit</string>
+    <string name="book_domestic_visit">Book a Home Visit Doctor</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- TODO: Remove or change this placeholder text -->
+
 </resources>

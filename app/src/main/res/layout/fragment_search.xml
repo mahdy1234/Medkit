@@ -101,7 +101,7 @@
         android:textAllCaps="false"
         android:textColor="@color/colorPrimary"
         app:backgroundTint="@color/colorAccent"
-        app:icon="@drawable/ic_drugs"
+        app:icon="@drawable/ic_drugs_filled"
         app:iconPadding="@dimen/_4sdp"
         app:iconTint="@color/colorPrimary"
         app:shapeAppearanceOverlay="@style/roundedStyle"
