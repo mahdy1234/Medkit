@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -18,54 +19,92 @@
         android:textSize="@dimen/_32sdp" />
 
     <Button
-        android:drawableStart="@drawable/ic_doctor"
         android:id="@+id/id1"
+        style="@style/Widget.MaterialComponents.Button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="@dimen/_8sdp"
-        android:background="@color/colorAccent"
+        android:layout_margin="@dimen/_4sdp"
         android:drawableEnd="@drawable/ic_baseline_chevron_left_24"
-        android:padding="@dimen/_4sdp"
-        android:textColor="@color/colorPrimary" />
+        android:padding="@dimen/_8sdp"
+        android:text="@string/book_directly"
+        android:textAlignment="viewStart"
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimary"
+        app:backgroundTint="@color/colorAccent"
+        app:icon="@drawable/ic_doctor"
+        app:iconPadding="@dimen/_4sdp"
+        app:iconTint="@color/colorPrimary"
+        app:shapeAppearanceOverlay="@style/roundedStyle"
+        app:textAllCaps="false" />
 
     <Button
         android:id="@+id/id2"
+        style="@style/Widget.MaterialComponents.Button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="@dimen/_8sdp"
-        android:background="@color/colorAccent"
-        android:drawableStart="@drawable/ic_baseline_call_24"
-        android:padding="@dimen/_4sdp"
-        android:textColor="@color/colorPrimary" />
+        android:layout_margin="@dimen/_4sdp"
+        android:padding="@dimen/_8sdp"
+        android:text="@string/book_via_call"
+        android:textAlignment="viewStart"
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimary"
+        app:backgroundTint="@color/colorAccent"
+        app:icon="@drawable/ic_baseline_call_24"
+        app:iconPadding="@dimen/_4sdp"
+        app:iconTint="@color/colorPrimary"
+        app:shapeAppearanceOverlay="@style/roundedStyle"
+        app:textAllCaps="false" />
 
     <Button
         android:id="@+id/id3"
+        style="@style/Widget.MaterialComponents.Button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="@dimen/_8sdp"
-        android:background="@color/colorAccent"
-        android:drawableStart="@drawable/ic_baseline_create_24"
-        android:padding="@dimen/_4sdp"
-        android:textColor="@color/colorPrimary" />
+        android:layout_margin="@dimen/_4sdp"
+        android:padding="@dimen/_8sdp"
+        android:text="@string/book_service"
+        android:textAlignment="viewStart"
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimary"
+        app:backgroundTint="@color/colorAccent"
+        app:icon="@drawable/ic_baseline_create_24"
+        app:iconPadding="@dimen/_4sdp"
+        app:iconTint="@color/colorPrimary"
+        app:shapeAppearanceOverlay="@style/roundedStyle"
+        app:textAllCaps="false" />
 
     <Button
         android:id="@+id/id4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="@dimen/_8sdp"
-        android:background="@color/colorAccent"
-        android:drawableStart="@drawable/ic_baseline_home_24"
-        android:padding="@dimen/_4sdp"
-        android:textColor="@color/colorPrimary" />
+        android:layout_margin="@dimen/_4sdp"
+        android:padding="@dimen/_8sdp"
+        android:text="@string/book_domestic_visit"
+        android:textAlignment="viewStart"
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimary"
+        app:backgroundTint="@color/colorAccent"
+        app:icon="@drawable/ic_baseline_home_24"
+        app:iconPadding="@dimen/_4sdp"
+        app:iconTint="@color/colorPrimary"
+        app:shapeAppearanceOverlay="@style/roundedStyle"
+        app:textAllCaps="false" />
 
     <Button
         android:id="@+id/id5"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="@dimen/_8sdp"
-        android:background="@color/colorAccent"
-        android:drawableStart="@drawable/ic_drugs"
-        android:padding="@dimen/_4sdp"
-        android:textColor="@color/colorPrimary" />
+        android:layout_margin="@dimen/_4sdp"
+        android:padding="@dimen/_8sdp"
+        android:text="@string/order_medicines"
+        android:textAlignment="viewStart"
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimary"
+        app:backgroundTint="@color/colorAccent"
+        app:icon="@drawable/ic_drugs"
+        app:iconPadding="@dimen/_4sdp"
+        app:iconTint="@color/colorPrimary"
+        app:shapeAppearanceOverlay="@style/roundedStyle"
+        app:textAllCaps="false" />
 
 </LinearLayout>

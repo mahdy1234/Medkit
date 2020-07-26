@@ -15,4 +15,9 @@
     <string name="lb">لبنان</string>
     <string name="ng">نيجيريا</string>
     <string name="ke">كينيا</string>
+    <string name="book_directly">احجز كشف دكتور</string>
+    <string name="book_via_call">احجز كشف عبر مكالمة هاتفية</string>
+    <string name="book_service">احجز خدمة او عملية</string>
+    <string name="order_medicines">اطلب أدوية</string>
+    <string name="book_domestic_visit">احجز زيارة منزلية</string>
 </resources>

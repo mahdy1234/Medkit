@@ -6,6 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorPrimary"
+    android:layoutDirection="ltr"
     app:layoutDescription="@xml/activity_splash_scene"
     tools:context=".ui.activities.SplashActivity">
 
@@ -62,8 +63,8 @@
         android:id="@+id/bag"
         android:layout_width="@dimen/_32sdp"
         android:layout_height="@dimen/_32sdp"
-        android:src="@drawable/ic_medical_bag_01"
-        android:contentDescription="bag" />
+        android:contentDescription="bag"
+        android:src="@drawable/ic_medical_bag_01" />
 
 
 </androidx.constraintlayout.motion.widget.MotionLayout>
