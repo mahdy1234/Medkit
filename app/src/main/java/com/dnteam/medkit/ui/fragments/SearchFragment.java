@@ -4,23 +4,27 @@ import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentActivity;
+
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.Toast;
 
 import com.dnteam.medkit.R;
+import com.dnteam.medkit.ui.activities.BookHomeVisitActivity;
 import com.dnteam.medkit.ui.activities.HomeActivity;
+import com.dnteam.medkit.util.NavigationControl;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link SearchFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
 public class SearchFragment extends Fragment {
-Button button;
-View view;
+    Button button;
+    View view;
+    Button bookHomeVisitButton;
+    Button pharmacyButton;
+    Button offersButton;
+
     public SearchFragment() {
         // Required empty public constructor
     }
@@ -44,12 +48,38 @@ View view;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        view=inflater.inflate(R.layout.fragment_search, container, false);
-        button=view.findViewById(R.id.id1);
-        button.setOnClickListener((cl)->{
-            Intent i=new Intent(getContext(), HomeActivity.class);
+        view = inflater.inflate(R.layout.fragment_search, container, false);
+        initComponents();
+        initListeners();
+
+        return view;
+    }
+
+    private void initComponents() {
+
+        bookHomeVisitButton = view.findViewById(R.id.book_home_visit_button);
+        pharmacyButton = view.findViewById(R.id.pharmacy_button);
+        offersButton = view.findViewById(R.id.offers_button);
+    }
+
+    private void initListeners() {
+
+
+
+        offersButton.setOnClickListener((cl) -> {
+            NavigationControl.getHomePageBottomNav(getActivity()).setSelectedItemId(R.id.offers);
+            NavigationControl.getHomePageNavController(getActivity()).navigate(R.id.offers_fragment);
+        });
+        bookHomeVisitButton.setOnClickListener((cl) -> {
+            Intent i = new Intent(getContext(), BookHomeVisitActivity.class);
             startActivity(i);
         });
-   // Inflate the layout for this fragment
-return view;    }
+        pharmacyButton.setOnClickListener((cl) -> {
+            NavigationControl.getHomePageBottomNav(getActivity()).setSelectedItemId(R.id.pharmacy);
+            NavigationControl.getHomePageNavController(getActivity()).navigate(R.id.pharmacy_fragment);
+        });
+
+    }
+
+
 }

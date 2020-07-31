@@ -20,4 +20,5 @@
     <string name="book_service">احجز خدمة او عملية</string>
     <string name="order_medicines">اطلب أدوية</string>
     <string name="book_domestic_visit">احجز زيارة منزلية</string>
+    <string name="now_with_medkit_you_can_book_a_home_visit_with_a_specialised_doctor">"الآن مع ميدكيت يمكنك حجز زيارة منزلية مع طبيب مختص "</string>
 </resources>

@@ -2,15 +2,11 @@ package com.dnteam.medkit.ui.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.navigation.NavController;
-import androidx.navigation.Navigation;
-import androidx.navigation.fragment.NavHostFragment;
-import androidx.navigation.ui.AppBarConfiguration;
-import androidx.navigation.ui.NavigationUI;
 
 import android.os.Bundle;
-import android.widget.Toast;
 
 import com.dnteam.medkit.R;
+import com.dnteam.medkit.util.NavigationControl;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import static androidx.navigation.Navigation.findNavController;
@@ -25,7 +21,7 @@ public class HomeActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
-        setUpNavigation();
+        initComponents();
 
         homeNavigation.setOnNavigationItemSelectedListener(item -> {
                     int id = item.getItemId();
@@ -59,13 +55,9 @@ public class HomeActivity extends AppCompatActivity {
 
     }
 
-    public void setUpNavigation() {
-        homeNavigation = findViewById(R.id.bottom_nav);
-        NavHostFragment navHostFragment = (NavHostFragment) getSupportFragmentManager()
-                .findFragmentById(R.id.nav_host_fragment);
-        NavigationUI.setupWithNavController(homeNavigation,
-                navHostFragment.getNavController());
+    public void initComponents() {
 
-        controller = navHostFragment.getNavController();
+        homeNavigation = NavigationControl.getHomePageBottomNav(this);
+        controller = NavigationControl.getHomePageNavController(this);
     }
 }

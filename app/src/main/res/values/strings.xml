@@ -22,8 +22,8 @@
     <string name="book_service">Book a Service or Operation</string>
     <string name="order_medicines">Order Medicines</string>
     <string name="book_domestic_visit">Book a Home Visit Doctor</string>
+    <string name="now_with_medkit_you_can_book_a_home_visit_with_a_specialised_doctor">Now with Medkit you can book a Home visit with a specialised Doctor</string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <!-- TODO: Remove or change this placeholder text -->
 
 </resources>
